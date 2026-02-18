@@ -1,6 +1,6 @@
 
 while True:
-    mass = float(input("Enter your mass in kg: "))
+    mass = float(input("Enter your weight in kg: "))
     height = float(input("Enter your height in meters: "))
 
     if mass <= 0 or mass >=300:
@@ -25,4 +25,5 @@ while True:
 
     choice = input("Do you want to Calculate again ?? (yes/no): ").lower()
     if choice == "no":
+        print("Thank you :)")
         break
