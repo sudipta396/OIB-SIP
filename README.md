@@ -39,9 +39,11 @@ python bmi_beginner.py
 python bmi_advance.py
 ```
 ## SAMPLE OUTPUT
+```text
 === BMI Calculator ===
 Enter your weight (kg): 52
 Enter your height (m): 1.737
 
 Your BMI is: 17.23
 Category: Under weight
+```
