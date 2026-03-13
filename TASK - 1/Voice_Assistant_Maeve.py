@@ -126,11 +126,8 @@ while True:
         if city:
             get_weather_data(city)
     elif purpose == "exit":
-        speak("Should I stop the session?")
-        answer = take_commands()
-        if "yes" in answer:
-            speak("Thank You, Have a nice day.")
-            break
+        speak("Thank You, Have a nice day.")
+        break
 
     else:
         speak("Sorry, I can't deal with that. ")
