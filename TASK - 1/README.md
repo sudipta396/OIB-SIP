@@ -1,3 +1,5 @@
+## TASK - 1
+
 # 🎙️ Maeve – Python Voice Assistant
 
 Maeve is a simple voice-controlled assistant built using Python that can perform basic tasks based on user voice commands.
@@ -34,8 +36,8 @@ This project was developed as part of the **Python Programming Internship at Oas
 ## ⚙️ Installation
 
 1. Install Python (Python 3.x) on your system.
-2. Install the required libraries:
 
+2. Install the required libraries:
 ```
 pip install SpeechRecognition pyttsx3 pyaudio requests
 ```

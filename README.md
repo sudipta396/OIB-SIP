@@ -1,49 +1,119 @@
-# OIB-SIP
-Python internship projects completed during my internship at Oasis Infobyte. 
+# 💻 OIB-SIP – Python Programming Internship
 
+This repository contains all the tasks and projects completed during my **Python Programming Internship at Oasis Infobyte (OIB-SIP)**.
+
+The internship focuses on building practical Python projects to strengthen programming concepts such as problem solving, logic building, and application development.
 
 ---
-## TASK 2  
-Python Programming with Oasis Infobyte
 
-## 🧮 BMI Calculator
-A Python program that calculates BMI from user input and shows the health category. Includes a basic CLI version and an optional GUI version.
+## 📌 Internship Details
 
-## 📌 Features
-- Accepts weight (kg) and height (m) from the user  
-- Calculates BMI using the standard formula  
-- Displays BMI category  
-- Validates basic input ranges  
-- Optional GUI version using Tkinter  
+* **Internship Program:** Python Programming Internship
+* **Organization:** Oasis Infobyte
+* **Intern:** Sudipta Chakraborty
+* **Duration:** February 2026 - March 2026
+* **Mode:** Remote
 
-## 📁 Files
-- bmi_beginner.py – Command-line BMI calculator (simple using while loop)  
-- bmi_advance.py – GUI-based BMI calculator (optional extension of the program)
+---
 
-## 💡 What is BMI?
-BMI (Body Mass Index) is a simple calculation based on height and weight to estimate body mass category for adults.
+## 📂 Projects Completed
 
-**Formula:**  
-BMI = weight (kg) / (height (m) × height (m))
+### 🔹 Task 1 – Voice Assistant (Maeve)
 
-## 🚀 How to Run
-- make sure you have Python installed.
-- clone this repo.
-- open the code in terminal and run the script: 
-### For CLI Version
-```bash
-python bmi_beginner.py
+A Python voice assistant that can understand voice commands and respond using text-to-speech.
+
+**Features**
+
+* Voice command recognition
+* Text-to-speech responses
+* search something using voice commands
+* Tell time, date, weather and basic responses
+
+**Technologies Used**
+
+* Python
+* SpeechRecognition
+* Pyttsx3
+* Requests
+
+---
+
+### 🔹 Task 2 – BMI Calculator
+
+A Python program that calculates Body Mass Index (BMI) using a user's height and weight.
+
+**Features**
+
+* Calculates BMI value
+* Displays BMI category
+* Beginner version
+* Advanced version
+
+**Technologies Used**
+
+* Python
+* Command Line Interface
+* basic Graphical User Interface
+
+---
+
+### 🔹 Task 3 – Random Password Generator
+
+A password generator that creates secure random passwords based on user-defined length.
+
+**Features**
+
+* Generates strong passwords
+* Uses letters, numbers, and symbols
+* GUI version using Tkinter
+
+**Technologies Used**
+
+* Python
+* Tkinter
+* Random module
+* String module
+
+---
+
+## 🛠 Skills Gained
+
+During this internship, I improved my knowledge in:
+
+* Python programming
+* Working with APIs
+* GUI development using Tkinter
+* Voice recognition systems
+* Writing clean and structured code
+* GitHub project management
+
+---
+
+## ▶️ How to Run the Projects
+
+1. Make sure you've downloaded - Python 3.x version
+
+2. Clone the repository 
+
+3. Navigate to the project folder
+
 ```
-### For GUI version
-```bash
-python bmi_advance.py
+cd OIB-SIP
 ```
-## SAMPLE OUTPUT
-```text
-=== BMI Calculator ===
-Enter your weight (kg): 52
-Enter your height (m): 1.737
+4. Run the Python file
 
-Your BMI is: 17.23
-Category: Under weight
 ```
+python filename.py
+```
+---
+
+## 📜 License
+
+This project is available under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+**Sudipta Chakraborty**
+Python Programming Intern – Oasis Infobyte
