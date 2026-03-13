@@ -3,18 +3,16 @@ import pyttsx3
 import datetime
 import webbrowser
 import requests
-import json
+# import json
 import os
 import time
 from dotenv import load_dotenv
 
 load_dotenv()
 
-Assistant_name = "Maeve"
+
 engine = pyttsx3.init()
-
 voices = engine.getProperty('voices')
-
 engine.setProperty('voice', voices[2].id)
 
 def speak(text):
@@ -29,22 +27,24 @@ def take_commands():
         with sr.Microphone() as source:
             print("Listening...")
             r.adjust_for_ambient_noise(source, duration=0.5)
-            audio = r.listen(source)
+            audio = r.listen(source, timeout=5)
 
             print("Recognizing...")
-            command = r.recognize_google(audio,language = 'en-in')
+            command = r.recognize_google(audio, language='en-in')
             print(f"You said : {command}")
             return command.lower()
+        
+    except sr.WaitTimeoutError:
+        print("no command found.")
+        return "timeout"
     except sr.UnknownValueError:
-        speak("Sorry, I cant understand you.")
-        time.sleep(1)
-        return ""
+        return "timeout"
     except sr.RequestError:
         speak("Network error. Please check your internet connection.")
-        return ""
+        return "timeout"
     except Exception:
         speak("Something went Wrong.")
-        return ""
+        return "timeout"
 
 def analyze_command(command):
     your_word = command.lower().split()
@@ -92,13 +92,17 @@ def get_weather_data(city):
 
 # def check_custom_commands():
     
-
-
-speak(f"I am {Assistant_name}, your personal Voice Assistant, How can I help you?")
+time.sleep(1)
+Assistant_name = "Maeve"
+speak(f"Helloo, my name is {Assistant_name}, your personal Voice Assistant, How can I help you?")
 while True:
+
     command = take_commands()
     if command == "":
         continue
+    if command == "timeout":
+        speak("no command found, shutting down...")
+        break
 
     purpose = analyze_command(command)
     
